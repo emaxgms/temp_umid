@@ -37,7 +37,7 @@
 			}
 			echo "</table><br>";
 		?>
-		<br><p>Dati aggiornati automaticamente ogni: 60sec<br></p>
+		<br><p>Dati aggiornati automaticamente ogni: 60secondi<br></p>
 	</center>
 </body>
 </html>
