@@ -75,6 +75,16 @@ li:active {
   font-weight: bold;
   color: #eb50a0;
 }
+#stitolo{
+  font-family: "Courier New";
+  text-align: right;
+  color: white;
+  font-size: 24px;
+}
+#stitolo:hover{
+  font-weight: bold;
+  color: #eb50a0;
+}
 .button1{
   color: white;
   size: 400px;
@@ -89,4 +99,23 @@ p{
   color: white;
   font-family: "Courier New";
   display: inline;
+}
+input[type=submit] {
+  padding:5px 15px; 
+  background:#ffff; 
+  border:0 none;
+  cursor:pointer;
+  -webkit-border-radius: 5px;
+  border-radius: 5px; 
+  font-family: "Courier New";
+}
+input[type=submit]:hover {
+  font-weight: bold;
+  color: black;
+  background-color: #eb50a0;
+}
+#errore{
+  font-size: 40px;
+  font-weight: bold;
+  background-color: red;
 }

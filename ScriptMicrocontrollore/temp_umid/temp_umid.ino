@@ -40,7 +40,7 @@ void loop() {
   Serial.print("Umidità: ");
   Serial.println(umid);
   HTTPClient http;
-  String url = "http://192.168.0.17/ema/8266/temp_umid/input.php?temp="+String(temp)+"&umid="+String(umid);
+  String url = "http://192.168.0.17/temp_umid/SitoWeb/input.php?temp="+String(temp)+"&umid="+String(umid);
   Serial.println(url);     
   http.begin(url);
   int httpCode = http.GET();

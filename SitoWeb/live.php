@@ -17,13 +17,14 @@
 	</script>
 </head>
 <body onLoad="setTimeout('location.reload()',60000)">
-	<p id="header">DATI TEMPERATURA & UMIDIT&Agrave;</p>
+	<center><p id="header">Dati Temperatura & Umidit&agrave;</p></center>
 	<ul>
 		<li onclick="visualizza_live()">Dati Live</li>
 		<li onclick="visualizza_storico()">Storico</li>
 		<li onclick="visualizza_grafici()">Grafici</li>
 	</ul>
 	<center>
+		<p id="stitolo">Dati aggiornati automaticamente ogni 60 secondi<br><br><br></p>
 		<?php
 			$query="select * from dati order by data desc limit 1";
 			$result=mysqli_query($c,$query);
@@ -37,7 +38,6 @@
 			}
 			echo "</table><br>";
 		?>
-		<br><p>Dati aggiornati automaticamente ogni 60 secondi<br></p>
 	</center>
 </body>
 </html>

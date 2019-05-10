@@ -17,7 +17,7 @@
 	</script>
 </head>
 <body>
-	<p id="header">Dati Temperatura & Umidit&agrave;</p>
+	<center><p id="header">Dati Temperatura & Umidit&agrave;</p></center>
 	<ul>
 		<li onclick="visualizza_live()">Dati Live</li>
 		<li onclick="visualizza_storico()">Storico</li>
