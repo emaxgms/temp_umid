@@ -67,7 +67,7 @@ li:active {
 
 #header{
   font-family: "Courier New";
-  text-align: center;
+  text-align: right;
   color: white;
   font-size: 40px;
 }
@@ -83,8 +83,10 @@ li:active {
 table{
   color: white;
   font-family: "Courier New";
+  text-align: center;
 }
 p{
   color: white;
   font-family: "Courier New";
+  display: inline;
 }

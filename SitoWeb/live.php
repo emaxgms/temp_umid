@@ -27,17 +27,17 @@
 		<?php
 			$query="select * from dati order by data desc limit 1";
 			$result=mysqli_query($c,$query);
-			echo "<br><br><table border=1>\n<tr>\n<td>Temperatura</td><td>Umiditá</td><td>Data</td>\n</tr>";
+			echo "<br><br><table border=1>\n<tr>\n<td width=150px>Temperatura</td><td width=150px>Umiditá</td><td width=150px>Data</td>\n</tr>";
 			while ($row=mysqli_fetch_array($result)) {
 				echo "<tr>";
-					echo "<td>".$row["temperatura"]."</td>";
-					echo "<td>".$row["umidita"]."</td>";
+					echo "<td>".$row["temperatura"]."°C</td>";
+					echo "<td>".$row["umidita"]."%</td>";
 					echo "<td>".$row["data"]."</td>";
 				echo "</tr>";
 			}
 			echo "</table><br>";
 		?>
-		<br><p>Dati aggiornati automaticamente ogni: 60secondi<br></p>
+		<br><p>Dati aggiornati automaticamente ogni 60 secondi<br></p>
 	</center>
 </body>
 </html>
