@@ -11,9 +11,6 @@
 		function visualizza_storico(){
 			window.location.href="storico.php";
 		}
-		function visualizza_grafici(){
-			window.location.href="grafici.php";
-		}
 	</script>
 </head>
 <body>
@@ -21,7 +18,6 @@
 	<ul>
 		<li onclick="visualizza_live()">Dati Live</li>
 		<li onclick="visualizza_storico()">Storico</li>
-		<li onclick="visualizza_grafici()">Grafici</li>
 	</ul>
 	<center>
 		<p id="stitolo">Selezionare intervallo di tempo desiderato<br><br><br></p>

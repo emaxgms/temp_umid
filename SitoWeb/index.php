@@ -11,9 +11,6 @@
 		function visualizza_storico(){
 			window.location.href="storico.php";
 		}
-		function visualizza_grafici(){
-			window.location.href="grafici.php";
-		}
 	</script>
 </head>
 <body>
@@ -21,45 +18,26 @@
 	<ul>
 		<li onclick="visualizza_live()">Dati Live</li>
 		<li onclick="visualizza_storico()">Storico</li>
-		<li onclick="visualizza_grafici()">Grafici</li>
 	</ul>
-		<?php
-			//$query='select DATE_FORMAT(data, "%i") as minsec from last_in';
-			//$result=mysqli_query($c,$query);
-			//echo "<table border=1>\n<tr>\n<td>Temperatura</td><td>Umiditá</td><td>Data</td>\n</tr>";
-			//while ($row=mysqli_fetch_array($result)) {
-			//	echo "<tr>";
-			//		echo "<td>".$row["data"]."</td>";
-			//	echo "</tr>";
-			//}
-			//echo "</table>"; 
-			//$today= date_create("2019-05-06 23:53:57");
-			//$x=date_format($today, "s");
-			//echo "$x";
-			//$today=date("Y-n-j H:i:s");
-			//$mod=date("Y-n-j H:i:s", strtotime($today . ' + 1 minutes'.'- 60 seconds'));
-			//$x=date_format($mod, "s");
-			//echo "sono x: $x";
-			//echo "$mod e $today";
-			//echo "$mod";
-
-			//echo date('Y-n-j H:i:s', strtotime($today . ' + 1 days'));
-			//$date = date("Y-n-j H:i:s");
-			//increment 2 days
-			//$mod_date = strtotime($date."+ 2 days");
-			//echo date("Y-n-j H:i:s",$mod_date) . "\n";
-		?>
-		<?php
-			// $query="select data from dati order by data limit 1";
-			// $result=mysqli_query($c,$query);
-			// $row=mysqli_fetch_array($result);
-			// $min=$row['data'];
-			// echo "$min<br>";
-			// $query="select data from dati order by data desc limit 1";
-			// $result=mysqli_query($c,$query);
-			// $row=mysqli_fetch_array($result);
-			// $max=$row['data'];
-			// echo "$max";
-		?>
+	<center>
+		<div style="width: 800px">
+			<p id="stitolo">TIPSIT</p><br><br>
+			<p>
+				Il nostro progetto consiste nel tenere sotto controllo temperatura e umidit&agrave; in un ambiente, attraverso l'uso del microcontrollore ESP8266-12E e un sensore di temperatura/umidit&agrave; DHT11.<br>
+				Questo &egrave; stato programmato utilizzando l'IDE Arduino e il relativo linguaggio di programmazione.<br>
+				<a id="stitolo" style="font-size: 18px" href="../ScriptMicrocontrollore/temp_umid/temp_umid.ino" download>CLICCA PER SCARICARE LO SCRIPT</a><br>
+				Il sito web invece &egrave; diviso in 3 parti, questa pagina di informazione, una pagina dove possiamo visualizzare i dati in tempo "reale" aggiornati al minuto, e un'altra pagine ove &egrave; possibile visualizzare i valori di temperatura/umidit&agrave; in un determinato lasso di tempo.
+			</p>
+			<br><br><br><p id="stitolo">INFORMATICA</p><br><br>
+			<p>
+				Tutto il sistema si basa su un database che contiene una tabella in cui salviamo tutti i dati che arrivano dal microcontrollore, e da cui prendiamo i dati per visualizzarli sotto forma di tabelle nel sito web.
+			</p>
+			<br><br><br><p id="stitolo">SISTEMI</p><br><br>
+			<p>
+				Per poter rendere disponibile il sito web dall'esterno della rete locale in cui &egrave; situato (computer personale di Emanuele a casa sua), abbiamo provveduto a aprire la porta 80 del router di casa di Emanuele e cos&igrave; potevamo, attraverso un qualsiasi browser web, scrivendo l'indirizzo ip pubblico, accedere al sito.<br>Per&ograve; c'era un problema ad agire in questo modo, ovvero che l'ip pubblico viene assegnato dinamicamente e quindi non essendo fisso cambiava.
+				Per questo abbiamo utilizzato il servizio di NoIp.com che collega l'ip dinamico a un hostname statico con un sottodominio ddns.net.<br><br>
+			</p>
+		</div>
+	</center>
 </body>
 </html>
