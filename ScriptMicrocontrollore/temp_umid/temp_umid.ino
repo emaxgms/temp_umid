@@ -6,10 +6,10 @@
 #define pin 2
 dht11 sens;
 float temp, umid;
-//const char* ssid     = "EmaPhone";
-//const char* password = "pippo2000";
-const char* ssid = "CowHouse";
-const char* password = "nonnanina32";
+//const char* ssid     = "SECONDARY_SSID";
+//const char* password = "SECONDARY_PSSWD";
+const char* ssid = "SSID";
+const char* password = "PASSWD";
 
 void setup() {
   delay(4000);
